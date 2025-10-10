@@ -27,8 +27,8 @@ export async function getGlobalMatchs() {
 
 export async function getMatchs() {
   const [localRes, globalRes] = await Promise.all([
-    fetch("http://localhost:3001/localMatchs"),
-    fetch("http://localhost:3001/GlobalMatchs"),
+    fetch("http://localhost:3001/localMatchs",{ cache: "no-store" }),
+    fetch("http://localhost:3001/GlobalMatchs",{ cache: "no-store" }),
   ]);
 
   if (!localRes.ok || !globalRes.ok) {
