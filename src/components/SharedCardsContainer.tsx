@@ -12,8 +12,7 @@ async function SharedCardsContainer({
   path: string
 }) {
   const cards = await fechingFunction()
-  
-  
+
   return (
     <section>
       <div className='px-[10px] mx-auto  mb-[113px] text-right w-full'>
@@ -21,20 +20,22 @@ async function SharedCardsContainer({
           {label}
         </h1>
 
-        <div className='flex justify-center items-center gap-5 mb-[48px]  lg:w-[85%] overflow-x-auto whitespace-nowrap  mx-auto'>
+        <div className='flex gap-5 mb-[48px] lg:w-[85%] overflow-x-auto overflow-y-hidden whitespace-nowrap mx-auto px-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent'>
           {cards &&
             cards.map((card: Card) => (
-              <SharedCard
-                key={card.id}
-                image={card.image}
-                title={card.title}
-                day={card.day}
-                month={card.month}
-                location={card.location}
-                price={card.price}
-              />
+              <div key={card.id} className='inline-block flex-shrink-0'>
+                <SharedCard
+                  image={card.image}
+                  title={card.title}
+                  day={card.day}
+                  month={card.month}
+                  location={card.location}
+                  price={card.price}
+                />
+              </div>
             ))}
         </div>
+
         <ViewMoreBTN path={path} />
       </div>
     </section>
