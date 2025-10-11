@@ -16,7 +16,7 @@ function SharedCard({
   price: string
 }) {
   return (
-    <div className='relative flex-shrink-0  w-[340px] sm:w-[406px] h-[451px] border-[#D9AC4F] border-[1px] rounded-[30px]   '>
+    <div className='relative flex-shrink-0  w-[340px] sm:w-[406px] h-[451px] border-[#D9AC4F] border-[1px] rounded-[30px] overflow-hidden md:max-w-full max-w-[-webkit-fill-available]'>
       <Image
         src={image ?? '/image.png'}
         alt='heart'
@@ -65,3 +65,4 @@ flex flex-col items-center justify-center '
 }
 
 export default SharedCard
+// 
