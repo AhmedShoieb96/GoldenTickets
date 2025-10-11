@@ -11,7 +11,8 @@ function Offer({
 }) {
   return (
     <div className='relative  w-full h-[300px] rounded-[30px]   overflow-hidden '>
-      <div className='absolute inset-0 bg-[#4c246ea6] flex flex-col items-center justify-end text-white text-lg font-bold rounded-[30px] z-10 transition-opacity duration-300 opacity-0 hover:opacity-100 '>
+      <div tabIndex={0} className='absolute inset-0 bg-[#4c246ea6] flex flex-col items-center justify-end text-white text-lg
+       font-bold rounded-[30px] z-10 transition-opacity duration-300 opacity-0 hover:opacity-100 focus:opacity-100'>
         <h1>{offer}</h1>
         <Button className='mb-8 cursor-pointer mt-8 bg-primary text-white'>
           {title}
