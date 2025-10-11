@@ -81,7 +81,7 @@ function DetailsCardPhoneScreen({ match }: { match: Card }) {
           </div>
           <div>
             <div className='text-right w-full border border-[#2F375F14] rounded-[14px] py-[16px] px-[9px] mt-[25px] '>
-              <p className='flex flex-row-reverse items-start gap-[8px] justify-end text-[12px] font-medium text-[#00000076] w-full h-[38px]'>
+              <p className='flex flex-row-reverse  items-start gap-[8px] justify-end text-[12px] font-medium text-[#00000076] w-full h-[38px] mb-3'>
                 <Image
                   className='w-[12px] h-[12px] mt-[5px]'
                   src='/images/check.png'

@@ -47,7 +47,7 @@ function NavBar() {
       <ul
         className={`fixed xl:static ${
           openMenu ? 'left-0 z-50 flex  ' : '-left-full'
-        } top-0 px-10 py-20 xl:p-0 bg-white xl:bg-transparent transition-all duration-200 h-full xl:h-auto flex flex-col xl:flex-row-reverse w-full xl:w-auto  items-end xl:items-center gap-4`}
+        } top-0 px-10 py-20 xl:p-0 bg-white xl:bg-transparent transition-all duration-200 h-full xl:h-auto flex flex-col xl:flex-row-reverse w-full xl:w-auto  items-end xl:items-center gap-[5px]`}
       >
         <div
           className={`${
@@ -84,7 +84,7 @@ function NavBar() {
               className={
                 link.href === `${Routes.EVENTS}`
                   ? ' text-lg font-bold font text-secondary  border-b-primary border-b-2 py-2  hover:text-primary'
-                  : 'text-sm text-secondary  font-medium  hover:text-primary'
+                  : 'text-[12px] text-secondary  font-medium  hover:text-primary'
               }
             >
               {' '}

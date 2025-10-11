@@ -16,7 +16,7 @@ async function page({ params }: { params: { id: string } }) {
     <section>
       <div className='container mx-auto px-4 py-[32px] lg:py-[56px]  text-center '>
         <Image
-          className='mx-auto w-[1265px]    h-[533px] rounded-[40px] shadow-md shadow-primary'
+          className='mx-auto w-[1265px]  h-[300px]  sm:h-[533px] rounded-[40px] shadow-md shadow-primary'
           src={match.image}
           alt={match.title}
           width={1000}

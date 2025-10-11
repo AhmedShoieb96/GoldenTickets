@@ -10,7 +10,7 @@ function FooterLinksMobile() {
                 rounded-[20px] border-[1px] border-[#D9AC4F] shadow-sm shadow-[#D9AC4F]'
         >
           <div className='flex justify-between items-center flex-col-reverse  mx-auto'>
-            <div className=' text-center w-[393px]  '>
+            <div className=' text-center   '>
               <p className='text-18px  mt-[24px] font-[500] mb-[16px]'>
                 تطبيق <span className='text-primary'>قولدن تيكت</span> الجديد
               </p>
@@ -20,14 +20,14 @@ function FooterLinksMobile() {
                   alt='app'
                   width={110}
                   height={50}
-                  className='w-[122px] h-[37px]   '
+                  className=' w-[25%] h-[33px]   '
                 />
                 <Image
                   src='/images/appGallery.png'
                   alt='app'
                   width={110}
                   height={50}
-                  className='w-[122px] h-[37px]   '
+                  className=' w-[25%] h-[33px]   '
                 />
 
                 <Image
@@ -35,7 +35,7 @@ function FooterLinksMobile() {
                   alt='google'
                   width={110}
                   height={50}
-                  className='w-[122px] h-[37px]   '
+                  className='w-[25%] h-[33px]   '
                 />
               </div>
             </div>
